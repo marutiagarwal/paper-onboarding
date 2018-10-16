@@ -131,7 +131,7 @@ extension PageViewItem {
             $0.duration = duration
             $0.toValue = path.cgPath
             $0.isRemovedOnCompletion = false
-            $0.fillMode = .forwards
+            $0.fillMode = kCAFillModeForwards
         }
         return animation
     }
@@ -141,8 +141,8 @@ extension PageViewItem {
             $0.duration = duration
             $0.toValue = toColor.cgColor
             $0.isRemovedOnCompletion = false
-            $0.fillMode = .forwards
-            $0.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            $0.fillMode = kCAFillModeForwards
+            $0.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         }
         return animation
     }
